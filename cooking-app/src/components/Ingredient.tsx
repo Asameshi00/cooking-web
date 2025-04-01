@@ -1,7 +1,7 @@
-// 食材コンポーネントを追加・削除・表示する。
+// 食材コンポーネントを表示する。
 
 import React, { useState } from 'react';
-import { Quantity, Ingredient } from '../types/ingredient';
+import { Quantity } from '../types/ingredient';
 
 const IngredientSelector: React.FC = () => {
     // 食材の量のラジオボタンを管理するための状態
@@ -13,7 +13,6 @@ const IngredientSelector: React.FC = () => {
 
     return (
         <div>
-            <h3>食材の量を選択してください</h3>
             <label>
                 <input
                     type="radio"
