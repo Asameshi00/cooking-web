@@ -11,8 +11,8 @@ const App: React.FC = () => {
     setIngredient((prevIngredients) => [...prevIngredients, {name: name, quantity: '適量'}]);
   }, []);
 
-  const removeIngredient = useCallback((index: number) => {
-    setIngredient((prevIngredients) => prevIngredients.filter((_, i) => i !== index));
+  const removeIngredient = useCallback((ingredientName: string) => {
+    setIngredient((prevIngredients) => prevIngredients.filter((ingredient) => ingredient.name !== ingredientName));
   }, []);
 
   return (
