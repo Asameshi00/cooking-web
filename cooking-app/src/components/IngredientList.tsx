@@ -1,6 +1,7 @@
 // 追加した食材のリストを表示するコンポーネント
 import React from 'react';
 import { Ingredient } from '../types/ingredient';
+import RadioButton from './RadioButton';
 
 interface IngredientListProps {
     ingredients: Ingredient[];
@@ -21,6 +22,10 @@ const IngredientList: React.FC<IngredientListProps> = ({ ingredients, removeIngr
                     </button>
                 </li>
             ))}
+            <li className="flex items-center justify-between p-2 bg-gray-100 rounded-md">
+                <span className="text-gray-700">量</span>
+                <RadioButton />
+            </li>
         </ul>
     );
 };
