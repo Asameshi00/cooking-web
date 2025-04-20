@@ -1,14 +1,14 @@
 import React, { useState, useCallback } from "react";
-import IngredientSelector from "./components/RadioButton";
 import IngredientForm from "./components/IngredientForm";
 import IngredientList from "./components/IngredientList";
-import { Ingredient } from "./types/ingredient";
+import { Ingredient, Quantity } from "./types/ingredient";
 
 const App: React.FC = () => {
   const [ingredient, setIngredient] = useState<Ingredient[]>([]);
 
-  const addIngredient = useCallback((name: string) => {
-    setIngredient((prevIngredients) => [...prevIngredients, {name: name, quantity: '適量'}]);
+  const addIngredient = useCallback((name: string, quantity: Quantity) => {
+    // スプレッド構文を使用して、既存の配列に新しい食材を追加
+    setIngredient((prevIngredients) => [...prevIngredients, {name: name, quantity: quantity}]);
   }, []);
 
   const removeIngredient = useCallback((ingredientName: string) => {
@@ -21,7 +21,6 @@ const App: React.FC = () => {
         <h1 className="text-2xl font-bold text-center mb-4">Cooking-Web</h1>
         <IngredientForm addIngredient={addIngredient} />
         <IngredientList ingredients={ingredient} removeIngredient={removeIngredient} />
-        <IngredientSelector />
       </div>
     </div>
   );

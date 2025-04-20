@@ -1,4 +1,4 @@
-// 食材コンポーネントを表示する。
+// ラジオボタンコンポーネント
 
 import React, { useState } from 'react';
 import { Quantity } from '../types/ingredient';
