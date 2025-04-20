@@ -1,5 +1,5 @@
 import React, { useState, useCallback } from "react";
-import IngredientSelector from "./components/Ingredient";
+import IngredientSelector from "./components/RadioButton";
 import IngredientForm from "./components/IngredientForm";
 import IngredientList from "./components/IngredientList";
 import { Ingredient } from "./types/ingredient";

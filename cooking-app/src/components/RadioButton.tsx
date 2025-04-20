@@ -3,7 +3,7 @@
 import React, { useState } from 'react';
 import { Quantity } from '../types/ingredient';
 
-const IngredientSelector: React.FC = () => {
+const RadioButton: React.FC = () => {
     // 食材の量のラジオボタンを管理するための状態
     const [selectedQuantity, setSelectedQuantity] = useState<Quantity>('適量');
 
@@ -53,4 +53,4 @@ const IngredientSelector: React.FC = () => {
     )
 }
 
-export default IngredientSelector;
+export default RadioButton;
