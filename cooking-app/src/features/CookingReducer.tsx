@@ -9,7 +9,7 @@ const CookingReducer = (state: State, action: Action) => {
         case "ADD_INGREDIENT":
             return {
                 ...state,
-                ingredients: [...state.ingredients, { name: action.payload, quantity: "適量" }],
+                ingredients: [...state.ingredients, { name: action.payload, quantity: "中" }],
             }
         // 食材を削除する
         case "REMOVE_INGREDIENT":

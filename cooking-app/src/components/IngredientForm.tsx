@@ -3,13 +3,14 @@
 import React, { useState, useCallback } from 'react';
 import { Quantity } from '../types/ingredient';
 
+/** 食材追加のプロパティ **/
 interface IngredientFormProps {
     addIngredient: (ingredient: string, quantity: Quantity) => void;
 }
 
 const IngredientForm: React.FC<IngredientFormProps> = ({ addIngredient }) => {
     const [ingredientName, setIngredientName] = useState<string>('');
-    const [ingredientQuantity, setIngredientQuantity] = useState<Quantity>('適量');
+    const [ingredientQuantity, setIngredientQuantity] = useState<Quantity>('少');
 
     const handleNameChange = useCallback((event: React.ChangeEvent<HTMLInputElement>) => {
         setIngredientName(event.target.value);
@@ -51,8 +52,7 @@ const IngredientForm: React.FC<IngredientFormProps> = ({ addIngredient }) => {
                     >
                         <option value="多">多</option>
                         <option value="中">中</option>
-                        <option value="小">小</option>
-                        <option value="適量">適量</option>
+                        <option value="少">少</option>
                     </select>
                 </div>
 

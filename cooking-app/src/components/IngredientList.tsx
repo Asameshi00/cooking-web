@@ -3,7 +3,7 @@
 import React from 'react';
 import { Ingredient } from '../types/ingredient';
 
-/** 食材のプロパティ **/
+/** 食材リストのインタフェース **/
 interface IngredientListProps {
     ingredients: Ingredient[];
     removeIngredient: (ingredient: string) => void;
