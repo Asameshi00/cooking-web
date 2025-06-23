@@ -1,5 +1,11 @@
 // レシピの型定義
 
-export const RecipeType = {
-
+export type RecipeType = {
+    recipeTitle: string;
+    recipeUrl: string;
+    foodImageUrl: string;
 }
+
+type Props = {
+    recipes: RecipeType[];
+};

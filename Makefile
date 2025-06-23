@@ -27,7 +27,7 @@ build:
 	@echo "Build complete."
 
 .PHONY: run
-run: build
+run:
 	@echo "=== アプリケーションの実行 ==="
 	unset HOST && cd $(COOKING_APP) && npm start
 	@echo "Execution complete."
