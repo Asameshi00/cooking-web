@@ -1,7 +1,9 @@
-// 食材の状態管理
-// 食材を追加する画面・検索画面・詳細画面で使用する
+/**
+ * 食材の状態管理
+ * 食材を追加する画面・検索画面・詳細画面で使用する
+ */
 
-import { State, Action } from "../types/ingredient"; 
+import { State, Action } from "../types/ingredient";
 
 const CookingReducer = (state: State, action: Action) => {
     switch (action.type) {

@@ -19,7 +19,7 @@
 
 ### 開発環境
 - webサーバー: Apache
-- 言語: TypeScript
+- 言語: TypeScript（React）
 - デプロイ: vercel
 
 ### 使用ツール

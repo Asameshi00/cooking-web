@@ -1,4 +1,6 @@
-// テキストバーで食材を追加するコンポーネント
+/**
+ * テキストバーで食材を追加するコンポーネント
+ */
 
 import React, { useState, useCallback } from 'react';
 import { Quantity } from '../types/ingredient';

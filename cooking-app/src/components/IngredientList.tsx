@@ -1,4 +1,6 @@
-// 追加した食材のリストを一覧で表示するコンポーネント
+/**
+ * 追加した食材のリストを一覧で表示するコンポーネント
+ */
 
 import React from 'react';
 import { Ingredient } from '../types/ingredient';
