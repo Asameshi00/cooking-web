@@ -8,9 +8,9 @@ const AppRoutes: React.FC = () => {
     return (
         <BrowserRouter>
             <Routes>
-                <Route path="/" element={<App />} /> {/* トップページ */}
-                <Route path="/recipe" element={<div>レシピ一覧</div>} /> {/* レシピ一覧 */}
-                <Route path="/recipe/:id" element={<div>レシピ詳細</div>} /> {/* レシピ詳細 */}
+                <Route path="/" element={<App />} />
+                <Route path="/recipe" element={<div>レシピ一覧</div>} />
+                <Route path="/recipe/:id" element={<div>レシピ詳細</div>} />
             </Routes>
         </BrowserRouter>
     );
